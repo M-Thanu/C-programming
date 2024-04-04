@@ -27,4 +27,5 @@ int main(){
     printf("Multiplication : %d\n",mulfun(10,4));
     printf("DIvision : %d",divfun(10,4));
 }
+
     
