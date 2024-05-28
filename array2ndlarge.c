@@ -11,20 +11,17 @@ int main(){
         myNum[i] = userin;
     }
     
-    int fmax;
-    int smax;
+    int fmax=0;
+    int smax=0;
 
     for (int k=0; k<4; k++){
-        if (myNum[k] > myNum[k+1]){
-            fmax = myNum[k];
-        }
         if (myNum[k] > fmax){
-            
-        }
+            fmax = myNum[k];
+        }  
     }
 
-    printf("The largest number : %d" , fmax);
-
+    //printf("The largest number : %d" , fmax);
+    
     return 0;
 
 }
