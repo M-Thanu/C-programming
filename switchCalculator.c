@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&a);
     printf("Enter the second number");
     scanf("%d",&b);
-    printf("Operations available are : \n1 - Addition\n2-Subtraction\n3-Multiplication\n4-Division\nPlease select your number: ");
+    printf("Operations available are : \n1 - Addition\n2 - Subtraction\n3 - Multiplication\n4 - Division\nPlease select your number: ");
     scanf("%d", &op);
 
     switch(op){
