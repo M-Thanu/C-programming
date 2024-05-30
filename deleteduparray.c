@@ -3,7 +3,7 @@
 int main(){
     int myNum[10];
 
-    myNum[0] = 10;
+    myNum[0] = 3;
     myNum[1] = 4;
     myNum[2] = 6;
     myNum[3] = 8;
@@ -13,16 +13,22 @@ int main(){
     myNum[7] = 8;
     myNum[8] = 1;
     myNum[9] = 9;
-
-    for (int i=0; i<9; i++){
-        for (int j=1; j<10; j++){
+    int size = 9;
+    for (int i=0; i<size; i++){
+        for (int j=i+1; j<size; j++){
             if(myNum[i] == myNum[j]){
-                myNum[j] = 0;
+                for(int k=j; k<size-1; k++){
+                    myNum[k] = myNum[k+1];
+                }
+                size --;
+                j --;
             }
         }
     }
-
-    for (int k=0; k<9; k++){
-        printf("%d",myNum[k]);
+    printf("Updated array elements : ");
+    for (int i=0; i<size; i++){
+        printf("%d\t", myNum[i]);
     }
+
+   
 }
