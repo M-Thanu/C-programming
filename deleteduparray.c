@@ -13,7 +13,14 @@ int main(){
     myNum[7] = 8;
     myNum[8] = 1;
     myNum[9] = 9;
-    int size = 9;
+
+     int size = 9;
+    printf("Original array elements : ");
+     for (int i=0; i<size; i++){
+        printf("%d\t", myNum[i]);
+    }
+
+   
     for (int i=0; i<size; i++){
         for (int j=i+1; j<size; j++){
             if(myNum[i] == myNum[j]){
