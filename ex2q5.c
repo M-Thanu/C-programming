@@ -1,5 +1,20 @@
 #include <stdio.h>
 
+void displayClass(float gpa){
+    if (gpa >= 3.70){
+        printf("First Class");
+    }
+    else if (gpa >= 3.30 && gpa <= 3.70){
+        printf("Second Upper");
+    }
+    else if (gpa >= 3.00 && gpa <= 3.30){
+        printf("Second Lower");
+    }
+    else{
+        printf("Some error");
+    }
+}
+
 int main(){
     int year;
     float agpa;
@@ -21,17 +36,3 @@ int main(){
     return 0;
 }
 
-void displayClass(float gpa){
-    if (gpa >= 3.70){
-        printf("First Class");
-    }
-    else if (gpa >= 3.30 && gpa <= 3.70){
-        printf("Second Upper");
-    }
-    else if (gpa >= 3.00 && gpa <= 3.30){
-        printf("Second Lower");
-    }
-    else{
-        printf("Some error");
-    }
-}
