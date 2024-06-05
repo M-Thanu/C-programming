@@ -6,7 +6,7 @@ int main(){
     char id[30];
     int dst;
     float af;
-    float tf=200.00;
+    float tf;
 
     printf("Enter your name : ");
     scanf("%s",&name);
@@ -19,9 +19,9 @@ int main(){
 
     printf("Name : %s \n ID : %s \n Duration of Study : %d \n",name,id,dst);
     printf("Annual Fee :\n");
-    printf("Year 1: $200\n");
+    /*printf("Year 1: $200\n");*/
 
-    for (int i=1; i<dst; i++){
+    for (int i=0; i<dst; i++){
         af = 200.00+200.00 * (5.00/100.00) * i;
         printf("Year %d: $%.2f\n", i+1,af);
         tf = tf + af;
