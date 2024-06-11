@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-float AddandAvg(float x, float y){
+void AddandAvg(float x, float y){
     float sum = x + y;
     float avg = sum / 2;
 
-    return sum;
-    return avg;
+    printf("Total is : %.2f", sum);
+    printf("\nAverage is: %.2f", avg);
 
 }
     
@@ -16,7 +16,7 @@ int main(){
     printf("Enter 2nd number: ");
     scanf("%f",&b);
 
-    printf("Total is %.2f\n Average is %.2f",AddandAvg(a,b));
+    AddandAvg(a,b);
     
     return 0;
 }
