@@ -9,7 +9,7 @@ void SqrDm(int x){
     
 }
 
-int RecDm(int y, int z){
+void RecDm(int y, int z){
     int PR = 2*y + 2*z; //Perimeter of Square
     int AR = y * z; //Area of Square
 
