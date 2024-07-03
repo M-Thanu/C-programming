@@ -3,21 +3,17 @@
 int main(){
     char Snum[30];
     int num;
+    int c=0;
 
     printf("Enter the number: ");
     scanf("%d",&num);
 
-    //sprintf(Snum, "%d",num);
-
-    int ld;
-    ld = num % 10;
-    int c;
-    
-    for (int i=1; i<10; i++){
-        while (ld == i){
-            c +=1;
-        }
+    while (num % 10 != 0){
+        c = c + 1;
+        num = num / 10;
     }
+
+    printf("The length is : %d",c);
 
     
 
