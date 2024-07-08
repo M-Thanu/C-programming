@@ -2,11 +2,11 @@
 
 int main(){
 
-    //Defining variables
-    int S;
-    int v;
+    //Defining function
+    int a; 
+    int v; 
     int t;
-    int a;
+    int S;
 
     //Taking inputs
 
