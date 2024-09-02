@@ -1,12 +1,13 @@
-#include <stdio.h>
-int main(){
-    int num;
-    printf("Enter the number: ");
-    scanf("%d",&num);
-
-    int r1 = num >> 2;
-    int r2 = num << 1;
-
-    printf("Result after Right Shift: %d",r1);
-    printf("\nResult after Left Shift: %d",r2);
-}
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a;
+    a=5;
+    printf("%d\n",a); 
+    printf("%d%d\n",a,a++); 
+    printf("%d%d%d\n",a,a++,a);
+    printf("%d%d%d\n",a,--a,a); 
+    printf("%d%d\n",a,a++); 
+    printf("%d%d\n",a,a--);
+} 
