@@ -1,50 +1,54 @@
 #include <stdio.h>
-int main(){
-    int n;
-    printf("Enter the amount: ");
-    scanf("%d",&n);
-    int h;
 
-    int t1=n/1000;
-    if (n%500!=0){
-        h=(n/1000)/500;
-    }
-    else if(n%200!=0){
-        h=(n/1000)/200;
-    }
-    else if(n%100!=0){
-        h =(n/1000)/100;
-    }
-    int f;
-    if (h%50!=0){
-        f=h/50;
-    }
-    else if(h%20!=0){
-        f=h/20;
-    }else{
-        f=h/10;
-    }
-    int o;
-    if(f>0){
-        if(f%5==0){
-            o=f/5;
-        }
-        else if(f%2==0){
-            o=f/2;
-        }
-        else{
-            o=f/1;
-        }
-    }
-    printf("The amount %d is equal to %d thousands 
-        \n%d five hundreds
-        \n%d two hundreds
-        \n%d hundreds
-        \n%d fifties
-        \n%d twenties
-        \n%d tens
-        \n%d fives
-        \n%d twos
-        \n%d ones ",t1,h,h,h,f,f,f,o,o,o);
+int main() {
+    int amount;
+    int n1000, n500, n200, n100, n50, n20, n10, c5, c2, c1;
+
+    // Input the amount
+    printf("Enter the amount in Rupees: ");
+    scanf("%d", &amount);
+
+    // Calculate the number of each denomination
+    n1000 = amount / 1000;
+    amount %= 1000;
+
+    n500 = amount / 500;
+    amount %= 500;
+
+    n200 = amount / 200;
+    amount %= 200;
+
+    n100 = amount / 100;
+    amount %= 100;
+
+    n50 = amount / 50;
+    amount %= 50;
+
+    n20 = amount / 20;
+    amount %= 20;
+
+    n10 = amount / 10;
+    amount %= 10;
+
+    c5 = amount / 5;
+    amount %= 5;
+
+    c2 = amount / 2;
+    amount %= 2;
+
+    c1 = amount; // Remaining amount will be the number of 1 Rupee coins
+
+    
+    printf("1000 Rupee notes: %d\n", n1000);
+    printf("500 Rupee notes: %d\n", n500);
+    printf("200 Rupee notes: %d\n", n200);
+    printf("100 Rupee notes: %d\n", n100);
+    printf("50 Rupee notes: %d\n", n50);
+    printf("20 Rupee notes: %d\n", n20);
+    printf("10 Rupee notes: %d\n", n10);
+    printf("5 Rupee coins: %d\n", c5);
+    printf("2 Rupee coins: %d\n", c2);
+    printf("1 Rupee coins: %d\n", c1);
+
     return 0;
 }
