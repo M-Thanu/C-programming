@@ -10,7 +10,7 @@ int main(){
     marks[4]=15;
     marks[5]=97;
     
-    for(int i=0; i<5; i++){
+    for(int i=0; i<6; i++){
         high(marks[i]);
     }
    

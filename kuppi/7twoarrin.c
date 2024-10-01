@@ -2,7 +2,7 @@
 
 int main(){
     // [row] [column]
-    int ages[3][3]={25,11,5,14,22,77}; //simultaneously
+    int ages[3][3]={25,11,5,14,22,77,99,87,14}; //simultaneously
     for (int i=0; i<3; i++){
         for(int j=0; j<3; j++){
             printf("%d\t",ages[i][j]);

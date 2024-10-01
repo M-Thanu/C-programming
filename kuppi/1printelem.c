@@ -18,11 +18,11 @@ int main(){
 
     printf("\nGetting user input\n");
     int quantity[5];
-    for(int i=0; i<3; i++){
+    for(int i=0; i<5; i++){
         printf("Enter quantity: ");
         scanf("%d",&quantity[i]);
     }
-    for(int i=0; i<3; i++){
+    for(int i=0; i<5; i++){
         printf("%d \t",quantity[i]);
     }
 
