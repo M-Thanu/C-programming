@@ -1,19 +1,12 @@
 #include <stdio.h>
 
-int main(){
-    char s='G';
 
-    switch(s){
-        case 'R':
-            printf("D");
-        case 'G':
-            printf("S");
-        case 'B':
-            printf("K");
-        default:
-            printf("H");
-        break;
+int main(){
+    
+    int i=65;
+    while(i<75){
+        printf("%c \n",++i +32);
+        ++i;
     }
-    printf("Hi");
-    return 0;
+    
 }
