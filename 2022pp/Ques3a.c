@@ -17,7 +17,7 @@ int main(){
         }
     }
     k = strlen(pwd);
-
+    printf("%d",k);
     char rpwd[20];
     int j=0;
     for (int i=k-1; i>=0; i--){
@@ -26,6 +26,7 @@ int main(){
     }
     rpwd[j] = '\0';
     strcat(rpwd,pwd);
+    printf("%s",rpwd);
     
     return 0;
 }
