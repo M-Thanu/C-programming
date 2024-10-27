@@ -12,6 +12,7 @@ int main(){
         }else{
             printf("\nOutof Range\n");
             i=i-1;
+            
         }
     }
     for (int j=0; j<3; j++){
