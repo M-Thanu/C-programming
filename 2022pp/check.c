@@ -1,13 +1,16 @@
 #include <stdio.h>
+struct book{
+    char author[20];
+    char title[20];
+    int pgno;
+};
+void display(struct book *n);
 int main(){
-    char name[3][2];
-for (int i=0; i<3; i++){
-    printf("HI : ");
-    scanf("%s",&name[i]);
-}
-for (int i=0; i<3; i++){
-    printf("HI : %s",name[i]);
-}
+    struct book b1={"harry","Cp",25};
+    display(&b1);
     
     return 0;
+}
+void display(struct book *n){
+    printf("%s %s %d",n->author,n->title, n->pgno);
 }

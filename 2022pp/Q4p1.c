@@ -11,25 +11,11 @@ struct employee{
 }e1;
 
 int main(){
-    printf("Enter ID: ");
-    scanf("%s",e1.emp_id);
-    printf("Enter NIC: ");
-    scanf("%s",e1.nic);
-    printf("Enter Name: ");
-    scanf("%s",e1.name);
-    printf("Enter Address: ");
-    scanf("%s",e1.address);
-    printf("Enter Dob: ");
-    scanf("%s",e1.dob);
-    printf("Enter Dep: ");
-    scanf("%s",e1.dep);
+    fflush(stdin);
+    printf("Enter ID, NIC, Name, Address, DoB, Dep: ");
+    scanf("%s %s %s %s %s %s",e1.emp_id,e1.nic,e1.name,e1.address,e1.dob,e1.dep);
+    printf("Enter ID:  %s\n NIC:  %s\n Name:  %s\n Address:  %s\n DoB:  %s\n Dep:  %s\n",e1.emp_id,e1.nic,e1.name,e1.address,e1.dob,e1.dep);
 
-    printf("Enter ID: %s\n",e1.emp_id);
-    printf("Enter NIC: %s\n",e1.nic);
-    printf("Enter Name: %s\n",e1.name);
-    printf("Enter Address: %s\n",e1.address);
-    printf("Enter dob: %s\n",e1.dob);
-    printf("Enter dep: %s\n",e1.dep);
     
     
     return 0;

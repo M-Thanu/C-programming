@@ -17,10 +17,10 @@ int main(){
     
 
     struct employee *edep;
-    edep=(struct employee*)malloc(dep_count*sizeof(struct employee*));
+    edep=(struct employee*)malloc(dep_count*sizeof(struct employee));
 
     
-    edep = (struct employee*)realloc(edep,(dep_count+2)*sizeof(struct employee*));
+    edep = (struct employee*)realloc(edep,(dep_count+2)*sizeof(struct employee));
     if(edep == NULL){
         printf("Unsuccessful");
     }
